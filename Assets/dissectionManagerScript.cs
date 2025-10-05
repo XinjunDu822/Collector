@@ -9,7 +9,14 @@ public class dissectionManagerScript : MonoBehaviour
     [SerializeField] GameObject[] leftLegs;
     [SerializeField] GameObject[] rightLegs;
 
-    [SerializeField] GameObject[] bodies;
+
+    [SerializeField] GameObject[] armoredLayer;
+    [SerializeField] GameObject[] fleshLayer;
+    [SerializeField] GameObject[] skeleLayer;
+    [SerializeField] DialogueManager dialogueManager;
+    //[SerializeField] GameObject[] bodies;
+
+    private bool canAccessFleshLayer = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,5 +27,10 @@ public class dissectionManagerScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool returnCanAccessFleshLayer()
+    {
+        return canAccessFleshLayer;
     }
 }

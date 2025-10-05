@@ -4,12 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] GameObject[] Heads;
-    [SerializeField] GameObject[] Bodies;
-    [SerializeField] GameObject[] leftArms;
-    [SerializeField] GameObject[] rightArms;
-    [SerializeField] GameObject[] leftLegs;
-    [SerializeField] GameObject[] rightLegs;
+
     [SerializeField] GameObject part;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
