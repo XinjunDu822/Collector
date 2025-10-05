@@ -8,7 +8,7 @@ public class menuScript : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     public void enterGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("overworld");
     }
 
     public void openSettings()
