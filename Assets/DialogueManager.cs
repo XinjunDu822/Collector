@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+
 public class DialogueManager : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clicking;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -48,8 +51,10 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         foreach(char letter in sentence.ToCharArray())
         {
+            audioSource.PlayOneShot(clicking);
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.05f);
+            
         }
     }
     void EndDialogue()
