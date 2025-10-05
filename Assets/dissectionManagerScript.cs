@@ -13,7 +13,7 @@ public class dissectionManagerScript : MonoBehaviour
     [SerializeField] GameObject[] armoredLayer;
     [SerializeField] GameObject[] fleshLayer;
     [SerializeField] GameObject[] skeleLayer;
-
+    [SerializeField] DialogueManager dialogueManager;
     //[SerializeField] GameObject[] bodies;
 
     private bool canAccessFleshLayer = false;
