@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
@@ -36,8 +37,20 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+
         Debug.Log(sentence);
-        dialogueText.text = sentence;
+
+    }
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
     }
     void EndDialogue()
     {
