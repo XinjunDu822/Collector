@@ -1059,7 +1059,6 @@ GameObject:
   - component: {fileID: 875611805}
   - component: {fileID: 875611804}
   - component: {fileID: 875611808}
-  - component: {fileID: 875611809}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1169,18 +1168,6 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 4bd7855d900094f4ca6a81765972230f, type: 2}
   volumeSlider: {fileID: 1451863649}
   brightnessSlider: {fileID: 273901160}
---- !u!114 &875611809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875611803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ccd61cadca294843a3faac1d229784a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &901579026
 GameObject:
   m_ObjectHideFlags: 0
