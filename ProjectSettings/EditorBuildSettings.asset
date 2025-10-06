@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/overworldMapControl/overworld.unity
     guid: f2ee315cc621fa745816a09c7d3d41f2
+  - enabled: 1
+    path: Assets/Scenes/BodyDissectionScreen.unity
+    guid: fd566c4c843fc704f952cf58f7ef8554
+  - enabled: 1
+    path: Assets/Scenes/BodyDissectionScreen2.unity
+    guid: aa9f7240519eae642936c7cf078a067c
+  - enabled: 1
+    path: Assets/Scenes/BodyDissectionScreen3.unity
+    guid: 5a466d0f9be0a094694716ba43d0524f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

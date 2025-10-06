@@ -14,6 +14,14 @@ public class dissectionManagerScript : MonoBehaviour
 
     [SerializeField] private List<GameObject> armoredLayer;
     [SerializeField] private List<GameObject> fleshLayer;
+    [SerializeField] private List<GameObject> rightArmLayer;
+    //[SerializeField] private List<GameObject> rightArmLayer2;
+    [SerializeField] private List<GameObject> leftArmLayer;
+    //[SerializeField] private List<GameObject> leftArmLayer2;
+    [SerializeField] private List<GameObject> rightLegLayer;
+    //[SerializeField] private List<GameObject> rightLegLayer2;
+    [SerializeField] private List<GameObject> leftLegLayer;
+    //[SerializeField] private List<GameObject> leftLegLayer2;
     [SerializeField] private GameObject[] skeleLayer;
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private DialogueTrigger dialogueTrigger;
@@ -59,7 +67,57 @@ public class dissectionManagerScript : MonoBehaviour
         return count;
     }
 
+    public int returnNumOfRightArmParts()
+    {
+        int count = 0;
+        for (int i = 0; i < rightArmLayer.Count; i++)
+        {
+            if (rightArmLayer[i] != null)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 
+    public int returnNumOfLeftArmParts()
+    {
+        int count = 0;
+        for (int i = 0; i < leftArmLayer.Count; i++)
+        {
+            if (leftArmLayer[i] != null)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int returnNumOfRightLegParts()
+    {
+        int count = 0;
+        for (int i = 0; i < rightLegLayer.Count; i++)
+        {
+            if (rightLegLayer[i] != null)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int returnNumOfLeftLegParts()
+    {
+        int count = 0;
+        for (int i = 0; i < leftLegLayer.Count; i++)
+        {
+            if (leftLegLayer[i] != null)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
     public bool returnIsDialogueHappening()
     {
         return isDialogueHappening;

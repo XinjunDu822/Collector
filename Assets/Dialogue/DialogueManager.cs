@@ -7,8 +7,10 @@ using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
+    public BlinkButton BlinkButton;
     public AudioSource audioSource;
     public AudioClip clicking;
+    public AudioClip alarm;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     [SerializeField] dissectionManagerScript managerScript;
@@ -65,14 +67,15 @@ public class DialogueManager : MonoBehaviour
         //Debug.
         foreach(char letter in sentence.ToCharArray())
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(clicking);
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.04f);
             
         }
     }
-    void EndDialogue()
+    public void EndDialogue()
     {
+        
         Debug.Log("End of Conversation");
     }
 }

@@ -1,10 +1,11 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
 {
-
+    [SerializeField] BlinkButton blinkButton;
     [SerializeField] GameObject part;
     private dissectionManagerScript dissectionManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,6 +13,7 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
     {
         GameObject manager = GameObject.Find("Manager");
         dissectionManager = manager.GetComponent<dissectionManagerScript>();
+
     }
 
     // Update is called once per frame
@@ -23,6 +25,8 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        
+
         // This code will execute when the GameObject is clicked.
         if (!dissectionManager.returnIsDialogueHappening())
         {
@@ -30,6 +34,34 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
             {
                 Debug.Log("bring up textbox");
                 dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfFleshParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfRightArmParts() == 1)
+            {
+                dissectionManager.setTrueIsDialogueHappening();
+
+                Debug.Log("bring up textbox");
+            }
+            if (dissectionManager.returnNumOfLeftArmParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfRightLegParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfLeftLegParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                blinkButton = FindObjectOfType<BlinkButton>();
+                blinkButton.blink(0.5f, 3);
+               
             }
             Destroy(part);
         }
