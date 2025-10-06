@@ -9,7 +9,7 @@ public class DialogueStorage
 
     public string[] sentences;
     [TextArea(3, 10)]
-    public string name;
+    public string[] names;
     
 
 }

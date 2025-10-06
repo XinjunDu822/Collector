@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 3ac7ae0d1b374d14998a7920a1c2dbee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3675199803440499870
+    second: backGroundPipes_0
+  - first:
+      213: 4670274916667259439
+    second: backGroundPipes_1
+  - first:
+      213: 101668286980021781
+    second: backGroundPipes_2
+  - first:
+      213: -4026256950118051144
+    second: backGroundPipes_3
+  - first:
+      213: -2955508407019142906
+    second: backGroundPipes_4
+  - first:
+      213: -1127998411672430251
+    second: backGroundPipes_5
+  - first:
+      213: 3054753467288668837
+    second: backGroundPipes_6
+  - first:
+      213: -973230922693626526
+    second: backGroundPipes_7
+  - first:
+      213: -5907952921899524841
+    second: backGroundPipes_8
+  - first:
+      213: -2433514331967793755
+    second: backGroundPipes_9
+  - first:
+      213: -3442017583170768140
+    second: backGroundPipes_10
+  - first:
+      213: 1942814527776701663
+    second: backGroundPipes_11
+  - first:
+      213: -4015937728087813156
+    second: backGroundPipes_12
+  - first:
+      213: 5460135819428814319
+    second: backGroundPipes_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: backGroundPipes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1431
+        width: 725
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263f75530411ffcc0800000000000000
+      internalID: -3675199803440499870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_1
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1737
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a7e53ea4620d040800000000000000
+      internalID: 4670274916667259439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_2
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 1594
+        width: 1164
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51edd52b4c2396100800000000000000
+      internalID: 101668286980021781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_3
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1711
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b214c9c2acdf18c0800000000000000
+      internalID: -4026256950118051144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_4
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1695
+        width: 7
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60181f443ccebf6d0800000000000000
+      internalID: -2955508407019142906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_5
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1615
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5595f05cb6b8850f0800000000000000
+      internalID: -1127998411672430251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1610
+        width: 39
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa422ef71aa46a20800000000000000
+      internalID: 3054753467288668837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_7
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1615
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265bb68d1a36e72f0800000000000000
+      internalID: -973230922693626526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_8
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1415
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d92748e1cb20ea0800000000000000
+      internalID: -5907952921899524841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_9
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 1246
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5dc3fbb9b6a3ed0800000000000000
+      internalID: -2433514331967793755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_10
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 1240
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f23574ae3f7b30d0800000000000000
+      internalID: -3442017583170768140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_11
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 1219
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc3990058346fa10800000000000000
+      internalID: 1942814527776701663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_12
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 1214
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd39c35e9e58448c0800000000000000
+      internalID: -4015937728087813156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backGroundPipes_13
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 1209
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedd076499c46cb40800000000000000
+      internalID: 5460135819428814319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      backGroundPipes_0: -3675199803440499870
+      backGroundPipes_1: 4670274916667259439
+      backGroundPipes_10: -3442017583170768140
+      backGroundPipes_11: 1942814527776701663
+      backGroundPipes_12: -4015937728087813156
+      backGroundPipes_13: 5460135819428814319
+      backGroundPipes_2: 101668286980021781
+      backGroundPipes_3: -4026256950118051144
+      backGroundPipes_4: -2955508407019142906
+      backGroundPipes_5: -1127998411672430251
+      backGroundPipes_6: 3054753467288668837
+      backGroundPipes_7: -973230922693626526
+      backGroundPipes_8: -5907952921899524841
+      backGroundPipes_9: -2433514331967793755
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

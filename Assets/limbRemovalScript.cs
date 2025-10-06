@@ -6,10 +6,12 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
 {
 
     [SerializeField] GameObject part;
+    private dissectionManagerScript dissectionManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        
+        GameObject manager = GameObject.Find("Manager");
+        dissectionManager = manager.GetComponent<dissectionManagerScript>();
     }
 
     // Update is called once per frame
@@ -22,7 +24,15 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         // This code will execute when the GameObject is clicked.
-        part.SetActive(false);
+        if (!dissectionManager.returnIsDialogueHappening())
+        {
+            if (dissectionManager.returnNumOfArmoredParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            Destroy(part);
+        }
 
             // You can add your specific click logic here.
             // For example, changing color, triggering an animation, etc.

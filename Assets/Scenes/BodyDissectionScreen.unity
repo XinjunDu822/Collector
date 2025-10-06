@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 18759984}
   - component: {fileID: 18759986}
   - component: {fileID: 18759985}
+  - component: {fileID: 18759987}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -206,11 +207,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4029d3aededae443ab2ac57f5f74d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  armoredLayer: []
-  fleshLayer: []
+  armoredLayer:
+  - {fileID: 453721034}
+  - {fileID: 1283778847}
+  - {fileID: 832013017}
+  - {fileID: 1709271219}
+  - {fileID: 869067262}
+  - {fileID: 1692094112}
+  fleshLayer:
+  - {fileID: 1434385060}
   skeleLayer: []
   dialogueManager: {fileID: 18759985}
   dialogueTrigger: {fileID: 18759986}
+  dialogueBox: {fileID: 1956965004}
 --- !u!114 &18759985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,10 +232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd83b4b889733349a4ff6a86a6923c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 18759987}
   clicking: {fileID: 0}
   nameText: {fileID: 287435528}
   dialogueText: {fileID: 2140937062}
+  managerScript: {fileID: 18759984}
 --- !u!114 &18759986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +254,111 @@ MonoBehaviour:
     - '"Beginning dissection"'
     - '"Proceed with caution"'
     - '"Good Luck"'
+    - '#'
+    - '"Hmm, what is this"'
+    - '"Guess I will put it on the report then"'
+    - '#'
+    - '"What a tough one to open"'
+    - '"Hope he''s rest well now"'
+    - '"Time for the next one"'
     name: Salvager
+--- !u!82 &18759987
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18759982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 4b88e3a9383fbf648ac411065c5206a8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.68
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &202500687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,8 +1967,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2030865741}
-  - {fileID: 1434385061}
   - {fileID: 1608749880}
   - {fileID: 1532548106}
   - {fileID: 1956965005}
@@ -2286,16 +2398,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434385060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.08, y: 8.96, z: 1}
+  m_LocalScale: {x: 4.0800004, y: 8.96, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 991412963}
+  m_Father: {fileID: 1608749880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -549, y: -7}
+  m_AnchoredPosition: {x: 182.00006, y: 2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434385062
@@ -2394,8 +2506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b80937d815baf446a46241dfe51490d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  part: {fileID: 0}
-  manager: {fileID: 0}
+  part: {fileID: 1434385060}
+  dissectionManager: {fileID: 0}
 --- !u!1 &1452525482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,6 +2622,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2030865741}
+  - {fileID: 1434385061}
   - {fileID: 10362921}
   m_Father: {fileID: 991412963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3075,16 +3189,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030865740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 11, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 991412963}
+  m_Father: {fileID: 1608749880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 0}
+  m_AnchoredPosition: {x: 220.56656, y: 8.999995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030865742
@@ -3107,7 +3221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1880120661550918566, guid: ca5c452e24667c141b4bd20ed787610c, type: 3}
+  m_Sprite: {fileID: -1991339011586337851, guid: 3e22932c5e2aefc4188f0aba7645cbbe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

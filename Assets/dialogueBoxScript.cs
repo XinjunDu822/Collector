@@ -6,6 +6,7 @@ public class dialogueBoxScript : MonoBehaviour, IPointerClickHandler
 
 {
     [SerializeField] DialogueManager dialogueManager;
+    [SerializeField] dissectionManagerScript dissectionManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +22,8 @@ public class dialogueBoxScript : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         // This code will execute when the GameObject is clicked.
-        dialogueManager.DisplayNextSentence();
+        if (dissectionManager.returnIsDialogueHappening())
+            dialogueManager.DisplayNextSentence();
 
         // You can add your specific click logic here.
         // For example, changing color, triggering an animation, etc.

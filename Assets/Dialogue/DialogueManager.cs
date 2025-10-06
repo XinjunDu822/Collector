@@ -11,41 +11,51 @@ public class DialogueManager : MonoBehaviour
     public AudioClip clicking;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    [SerializeField] dissectionManagerScript managerScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Queue<string> dialogues;
-
+    private Queue<string> nameOfSpeaker;
     void Awake()
     {
         dialogues = new Queue<string>();
+        nameOfSpeaker = new Queue<string>();
     }
     public void StartDialogue(DialogueStorage dialogue)
     {
-        Debug.Log("Starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
-        //sentences.Clear();
+        
+        dialogues.Clear();
         Debug.Log(dialogue.sentences[0]); 
         foreach (string sentence in dialogue.sentences)
         {
             dialogues.Enqueue(sentence);
 
         }
+        foreach (string name in dialogue.names)
+        {
+            nameOfSpeaker.Enqueue(name);
+
+        }
+
         Debug.Log("Display next");
         DisplayNextSentence();
 
     }
     public void DisplayNextSentence()
     {
-
         if (dialogues.Count == 0)
         {
             EndDialogue();
             return;
         }
-
         string sentence = dialogues.Dequeue();
         StopAllCoroutines();
+        if (sentence.Length == 1 && sentence == "#")
+        {
+            managerScript.setFalseIsDialogueHappening();
+            return;
+        }
+        nameText.text = nameOfSpeaker.Dequeue();
         StartCoroutine(TypeSentence(sentence));
-
         Debug.Log(sentence);
 
     }
@@ -55,7 +65,7 @@ public class DialogueManager : MonoBehaviour
         //Debug.
         foreach(char letter in sentence.ToCharArray())
         {
-            audioSource.PlayOneShot(clicking);
+            audioSource.Play();
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.04f);
             
