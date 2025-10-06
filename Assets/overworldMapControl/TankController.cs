@@ -5,6 +5,7 @@ public class TankMovement : MonoBehaviour
 {
     [SerializeField] private AudioSource tankMoveSound;
     [SerializeField] private AudioSource tankRotateSound;
+    [SerializeField] private AudioSource ambient;
     public float moveSpeed = 5f;
     public float rotateSpeed = 150f;
     private float timer = 0.1f;
@@ -16,6 +17,7 @@ public class TankMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        ambient.Play();
     }
 
     void FixedUpdate()
