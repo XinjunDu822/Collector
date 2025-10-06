@@ -74,7 +74,7 @@ public class TankMovement : MonoBehaviour
             if (soundtimer <= 0)
             {
                 StartCoroutine(Camera.main.GetComponent<ScreenShake2D>().Shake(0.2f, 0.15f));
-                soundtimer = 1f;
+                soundtimer = 1.55f;
             }
         }
 
