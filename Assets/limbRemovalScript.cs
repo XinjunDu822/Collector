@@ -31,6 +31,32 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
                 Debug.Log("bring up textbox");
                 dissectionManager.setTrueIsDialogueHappening();
             }
+            if (dissectionManager.returnNumOfFleshParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfRightArmParts() == 1)
+            {
+                dissectionManager.setTrueIsDialogueHappening();
+
+                Debug.Log("bring up textbox");
+            }
+            if (dissectionManager.returnNumOfLeftArmParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfRightLegParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
+            if (dissectionManager.returnNumOfLeftLegParts() == 1)
+            {
+                Debug.Log("bring up textbox");
+                dissectionManager.setTrueIsDialogueHappening();
+            }
             Destroy(part);
         }
 
