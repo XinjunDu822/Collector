@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 47025951}
 --- !u!1 &154900201
 GameObject:
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 156736622}
 --- !u!1 &163926727
 GameObject:
@@ -766,6 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 458012073}
 --- !u!1 &582245728
 GameObject:
@@ -854,6 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 587381116}
 --- !u!1 &656338884
 GameObject:
@@ -1883,6 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1135821821}
 --- !u!1 &1140059867
 GameObject:
@@ -2055,6 +2060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1169439835}
 --- !u!1 &1209726006
 GameObject:
@@ -2205,6 +2211,7 @@ GameObject:
   - component: {fileID: 1235266717}
   - component: {fileID: 1235266718}
   - component: {fileID: 1235266719}
+  - component: {fileID: 1235266721}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Manager
@@ -2341,8 +2348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd83b4b889733349a4ff6a86a6923c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  BlinkButton: {fileID: 1605850133}
   audioSource: {fileID: 1235266719}
-  clicking: {fileID: 0}
+  clicking: {fileID: 8300000, guid: 4b88e3a9383fbf648ac411065c5206a8, type: 3}
+  alarm: {fileID: 8300000, guid: 3f26cc0fbca61ae489ca3fcb5b47f970, type: 3}
   nameText: {fileID: 1624521045}
   dialogueText: {fileID: 166999315}
   managerScript: {fileID: 1235266716}
@@ -2458,6 +2467,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1235266721
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235266715}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3f26cc0fbca61ae489ca3fcb5b47f970, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1270494616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1270494616}
 --- !u!1 &1353295996
 GameObject:
@@ -2648,6 +2755,7 @@ RectTransform:
   - {fileID: 656338885}
   - {fileID: 2119051183}
   - {fileID: 1833343495}
+  - {fileID: 1605850132}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2841,6 +2949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1441330687}
 --- !u!1 &1501496776
 GameObject:
@@ -2891,6 +3000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1501496776}
 --- !u!1 &1552745941
 GameObject:
@@ -2941,7 +3051,242 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1552745941}
+--- !u!1 &1605850131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605850132}
+  - component: {fileID: 1605850136}
+  - component: {fileID: 1605850135}
+  - component: {fileID: 1605850134}
+  - component: {fileID: 1605850133}
+  - component: {fileID: 1605850137}
+  m_Layer: 5
+  m_Name: alarmWarning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1605850132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.4, y: 5.789474, z: 5.789474}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1369298142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4, y: 18}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1605850133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382daa6041bc7f34f86d7b2da6226e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  button: {fileID: 1605850131}
+  alarm: {fileID: 8300000, guid: 3f26cc0fbca61ae489ca3fcb5b47f970, type: 3}
+  audioSource: {fileID: 1605850137}
+--- !u!114 &1605850134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1605850135}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1605850135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1778130446455393028, guid: 5de2d8439de11cb45ae06647ed5d1637, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1605850136
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_CullTransparentMesh: 1
+--- !u!82 &1605850137
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605850131}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3f26cc0fbca61ae489ca3fcb5b47f970, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1624521043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0672ee4ebebfbd2449188957e7c087d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
+  blinkButton: {fileID: 0}
   part: {fileID: 1717897538}
 --- !u!1 &1789105636
 GameObject:
