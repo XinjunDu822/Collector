@@ -2233,6 +2233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   armoredLayer:
   - {fileID: 1552745941}
+  - {fileID: 156736622}
   fleshLayer:
   - {fileID: 156736622}
   - {fileID: 1270494616}
@@ -2246,8 +2247,8 @@ MonoBehaviour:
   - {fileID: 587381116}
   - {fileID: 47025951}
   leftLegLayer:
-  - {fileID: 1169439835}
   - {fileID: 1135821821}
+  - {fileID: 1169439835}
   skeleLayer: []
   dialogueManager: {fileID: 1235266718}
   dialogueTrigger: {fileID: 1235266717}
@@ -2266,76 +2267,101 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
   dialogue:
     sentences:
-    - "\u201CCome to save me, have ya? Heh, ol\u2019 Jack doesn\u2019t need saving.
-      But, maybe just\u2026 lend me a piece of you, \u2018eh? They need me. You\u2019re
-      just one of them scrap heaps, but me? I\u2019m the best there\u2019s ever been.\u201D   "
-    - "\u201CI enlisted when I was\u2026 17? Nah, 16. I remember being over the fuckin\u2019
-      moon, counting the days until they deployed me.\u201D "
+    - "\u201CYou should let a professional like me handle this, I would\u2019ve finished
+      this job ages ago. Especially in my early years \u2014 I was so optimistic
+      about my duty as a medic. Looking back at it, I was way too selfless to every
+      single patient I met, I literally forgot to take showers.\u201C "
+    - "\u201CSo hopeful and passionate, too bad that mindset doesn\u2019t amount
+      to much anymore. I\u2019m pretty acclimated to seeing people with blown off
+      jaws or ugly faces melted by acid. During a time like this\u2026 you have to
+      stop giving a shit about all the people who probably won\u2019t live long enough
+      to give a shit about you. "
+    - "\u201CTo be blunt, saving someone is only the right choice if it will benefit
+      you. Like if a sniper got his arms blown off, just let 'em bleed out. How is
+      he gonna aim his gun?  "
     - '#'
-    - "\u201CThey told me I was the best in boot camp\u2013top of the list. Mile
-      run, bench press, shooting range, I had it all. You name it, I\u2019d ace it.
-      I was more than they ever expected. Hell, oftentimes more than they could handle.\u201D "
-    - "\u201CYou should have seen me on the battlefield. HAH! They\u2019d whisper
-      about my trigger finger, y\u2019know? Some hear it in their nightmares. It\u2019s
-      beautiful, isn\u2019t it? How the tiny, tiny, click of a gun ends those nightmares
-      forever. Could even call me a philanthropist of sorts, dont\u2019cha think?\u201D"
-    - "\u201CDown in the trenches, we used a lot of slang. Whizz-bang, for one. \u2018S
-      the sound of a bullet coming off a goddamned sniper. Goes so fast you never
-      knew what hitcha. Whizz-bang.\u201D "
-    - "\u201CCopping a packet. That\u2019s another. No one likes to talk \u2018bout
-      death. \u2018Cept me, after I\u2019ve had more than my fair share of booze.
-      You cop a packet, you\u2019re goin\u2019 home. Probably goin\u2019 six feet
-      under your home, actually. But some craven mothafuckas made it back. Livin\u2019
-      safe and sound while the rest of us risk our necks.\u201D "
+    - "\u201CStop touching me please.\u201D"
+    - "\u201CPleeease stop touching my corpse.\u201C"
+    - "\u201CThat\u2019s not even the right place to cut. Are you trying to perform
+      an autopsy?                        I would know because I\u2019m trained in
+      that area.\u201D   "
+    - "\u201CYou\u2019re supposed to make a Y-shaped incision from the shoulders
+      to the sternum, then continue the incision to the pubic bone.\u201D"
     - '#'
-    - "\u201CFuck\u2026 Always thought I\u2019d be the one giving the Reapers orders.\u201D "
+    - "\u201CYou'd be better off just incinerating me instead after that performance.\u201D "
     - '#'
-    - "\u201CYou don\u2019t want to cut that open. You don\u2019t know what I\u2019ve
-      put in my body. What\u2019s that? Do I know? Of course not!\u201D "
+    - "\u201CWhy do you want my arm anyways? Are you disposing of me?\u201D "
+    - "\u201CThis is starting to feel intimate.\u201D"
+    - "\u201CYou could use a scalpel. You know, the intelligent option.\u201D "
     - '#'
-    - "\u201CLucky you. So many people wanted a piece of me\u2026 you\u2019re the
-      first who\u2019s actually gotten one.\u201D "
-    - "\u201CShufflin\u2019 off this mortal coil\u2026 s\u2019 a lot more painful
-      than I imagined\u2026 but Sarge always said\u2026 pain is\u2026 just weakness\u2026
-      leaving\u2026 the body\u2026\u201D "
-    - "\u201CNot yet! I\u2019m not dead\u2026 not yet\u2026 I\u2019ll tear you limb
-      from fuckin\u2019 limb if i haf\u2019ta\u2026 Chase you to the end of the goddamned
-      earth\u2026\u201D "
-    - "\u201CJust let me at them\u2026 recycling me is a waste, y\u2019know? I\u2019ve\u2026
-      I\u2019ve got too much experience\u2026 too many more to save\u2026 too much
-      to\u2026 to\u2026 die\u2026 for\u2026\u201D "
+    - '"Will you listen? I''ll be straightforward."'
+    - "\"5 years ago, in my late 30\u2019s, I let a completely viable patient bleed
+      out for hours from a minor gunshot wound.\""
     - '#'
-    - "\u201CYou\u2019re committed, I\u2019ll give you that. Do ya really think this\u2019ll
-      stop me?\u201D\t "
-    - "\u201CWar is as old as gravity. Do it, take me apart. I'll become something
-      much more than just a tool. You don\u2019t know it yet, but come some thirty-odd
-      years, you\u2019ll see me again. In the shrapnel, in sinkholes, in the watchful
-      eyes of the camera lens, you\u2019ll never escape me. You'll be pickin\u2019
-      up bits of me wherever the hell you go.\u201D "
-    - '#'
-    - "\u201CIt\u2019ll be good ol\u2019 Jack\u2026 back at it again.\u201D "
+    - "\"I don\u2019t even remember why, I just remember not feeling anything after
+      he passed. I regret not having any feelings about it, it didn\u2019t feel human.\""
+    - '"I didn''t feel human."'
     names:
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
-    - Soldier
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
 --- !u!114 &1235266718
 MonoBehaviour:
   m_ObjectHideFlags: 0
