@@ -39,7 +39,7 @@ public class menuScript : MonoBehaviour
         settingScreen.SetActive(false);
         CreditsText.SetActive(false);
         credits.SetActive(true);
-        socials.SetActive(true);
+        //socials.SetActive(true);
         SocialsButtons.SetActive(false);
         closeButton.SetActive(false);
         gameButtons.SetActive(true);
@@ -60,11 +60,6 @@ public class menuScript : MonoBehaviour
         credits.SetActive(false);
         SocialsButtons.SetActive(true);
         closeButton.SetActive(true);
-    }
-
-    public void exitGame()
-    {
-        Application.Quit();
     }
 
     public void setVolume()
