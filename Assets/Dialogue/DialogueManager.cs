@@ -12,34 +12,37 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private Queue<string> sentences;
+    private Queue<string> dialogues;
 
-    void Start()
+    void Awake()
     {
-        sentences = new Queue<string>();
+        dialogues = new Queue<string>();
     }
-    public void StartDialogue (DialogueStorage dialogue)
+    public void StartDialogue(DialogueStorage dialogue)
     {
         Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
-        sentences.Clear();
+        //sentences.Clear();
+        Debug.Log(dialogue.sentences[0]); 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            dialogues.Enqueue(sentence);
 
         }
+        Debug.Log("Display next");
         DisplayNextSentence();
 
     }
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+
+        if (dialogues.Count == 0)
         {
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        string sentence = dialogues.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
@@ -49,11 +52,12 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
+        //Debug.
         foreach(char letter in sentence.ToCharArray())
         {
             audioSource.PlayOneShot(clicking);
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.04f);
             
         }
     }
