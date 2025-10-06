@@ -416,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 63, y: 29}
+  m_AnchoredPosition: {x: 102, y: 43}
   m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348186557
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_text: 5732.2PTB  OK
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3754858912235700255, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -575,19 +575,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CPU Type:\t\tRAYZOR-AM\tBase Memory\t:\t100 PTB\nCo-Processor:\tInstalled\t\tExtended
-    Memory\t:\t5512.2 PTB\nCPU Clock:\t\t6.1 THz\t\tCache Memory\t:\t220 PTB\n\n\nPCIFl
-    device listing ......\nBus No.\tDevice No.\tFunc No.\tVend ID\tDevice ID\tDevice
-    Class    Status\n0\t\t7\t\t0\t\t8086\t\t1240\t\tARM L\t     Online\n0\t\t12\t\t0\t\t8086\t\t1230\t\tARM
-    R\t     Online\n0\t\t6\t\t1\t\t8086\t\t1220\t\tLEG L\t     Online\n0\t\t11\t\t1\t\t8086\t\t1210\t\tLEG
-    R\t     Online\n0\t\t9\t\t5\t\t9344\t\t1243\t\tARM BLD\t     Online\n0\t\t8\t\t8\t\t8086\t\t1241\t\tHAND
-    L\t     Online\n0\t\t13\t\t8\t\t8086\t\t1231\t\tHAND R\t     Online\n0\t\t1\t\t10\t\t2207\t\t0920\t\tSONAR\t    
-    Online\n0\t\t25\t\t15\t\t2207\t\t0835\t\tNANDECT\t     Online\n0\t\t19\t\t10\t\t2207\t\t9010\t\tSPECTCAM\t    
-    Online\n0\t\t32\t\t35\t\t9344\t\t4568\t\tBLENDER\t     Online\n0\t\t21\t\t23\t\t1099\t\t4588\t\tNANSTORG      
-    Online\n0\t\t32\t\t35\t\t9344\t\t2300\t\tPULV\t\t     Online"
+  m_text: "CPU Type:\t\tRAYZOR-AM\t\tBase Memory\t:      100 PTB\nCo-Processor:\tInstalled\t\tExtended
+    Memory\t:      5512.2 PTB\nCPU Clock:\t6.1 THz\t\tCache Memory\t:      220 PTB\n\n\nPCIFl
+    device listing ......\nBus No.\tDevice No.   Func No.   Vend ID   Device ID  
+    Device Class \tStatus\n0\t7\t   0\t    8086\t    1240\t   \tARM L\tOnline\n0\t12\t  
+    0\t    8086\t    1230\t\tARM R\tOnline\n0\t6\t   1\t    8086\t    1220\t\tLEG
+    L\tOnline\n0\t11\t   1\t    8086\t    1210\t\tLEG R\tOnline\n0\t9\t   5\t   
+    9344\t    1243\t\tARM BLD\tOnline\n0\t8\t   8\t    8086\t    1241\t\tHAND L\tOnline\n0\t13\t  
+    8\t    8086\t    1231\t\tHAND R\tOnline\n0\t1\t   10\t    2207\t    0920\t\tSONAR\tOnline\n0\t25\t  
+    15\t    2207\t    0835\t\tNANDECT\tOnline\n0\t19\t   10\t    2207\t    9010\t\tSPECTCAM\tOnline\n0\t32\t  
+    35\t    9344\t    4568\t\tBLENDER\tOnline\n0\t21\t   23\t    1099\t    4588\t\tNANSTORG   
+    Online\n0\t32\t   35\t    9344\t    2300\t\tPULV\tOnline"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3754858912235700255, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -652,7 +653,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &514734802
@@ -1766,7 +1767,7 @@ MonoBehaviour:
     Test   :      '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -3754858912235700255, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
