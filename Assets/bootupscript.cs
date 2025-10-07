@@ -19,6 +19,11 @@ public class bootupscript : MonoBehaviour
         StartCoroutine(wait());
     }
 
+    public void exitScene()
+    {
+        SceneManager.LoadScene("overworld");
+    }
+
     IEnumerator wait()
     {
         yield return new WaitForSecondsRealtime(1);
