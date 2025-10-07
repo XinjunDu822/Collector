@@ -8,6 +8,8 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] BlinkButton blinkButton;
     [SerializeField] GameObject part;
     private dissectionManagerScript dissectionManager;
+    private float timer = 0f;
+    private bool isActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -25,7 +27,7 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        
+
 
         // This code will execute when the GameObject is clicked.
         if (!dissectionManager.returnIsDialogueHappening())
@@ -64,10 +66,12 @@ public class limbRemovalScript : MonoBehaviour, IPointerClickHandler
                
             }
             Destroy(part);
+
         }
 
-            // You can add your specific click logic here.
-            // For example, changing color, triggering an animation, etc.
+        // You can add your specific click logic here.
+        // For example, changing color, triggering an animation, etc.
+
     }
 
 }

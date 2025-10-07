@@ -170,6 +170,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 47025951}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &154900201
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 156736622}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &163926727
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +575,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166999313}
   m_CullTransparentMesh: 1
+--- !u!1 &328156337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328156338}
+  - component: {fileID: 328156340}
+  - component: {fileID: 328156339}
+  m_Layer: 5
+  m_Name: BlackScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &328156338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328156337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.24, y: 1.24, z: 1.24}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1369298142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &328156339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328156337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &328156340
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328156337}
+  m_CullTransparentMesh: 1
 --- !u!1 &362969487
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 458012073}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &582245728
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +943,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 587381116}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &656338884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1976,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1135821821}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1140059867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1169439835}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1209726006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,13 +2388,36 @@ MonoBehaviour:
     - "\u201CYou could use a scalpel. You know, the intelligent option.\u201D "
     - '#'
     - '"Will you listen? I''ll be straightforward."'
-    - "\"5 years ago, in my late 30\u2019s, I let a completely viable patient bleed
-      out for hours from a minor gunshot wound.\""
+    - "\" I\u2019ll be straight with you. Well. Not exactly, actually. When I was
+      in my late 20\u2019s, I got wasted with this guy one night at the training
+      camp.\""
+    - "\"I don\u2019t remember details, but I do remember pissing in the snow, drawing
+      dicks all around the camp. And then this girl I liked saw us\u2026 lost her
+      shit. I swear, I think she thought we were gay. But honestly? She might be
+      right. \""
+    - "\"\u2026 Nah, I\u2019m just fucking with you. Unless\u2026? \""
     - '#'
-    - "\"I don\u2019t even remember why, I just remember not feeling anything after
-      he passed. I regret not having any feelings about it, it didn\u2019t feel human.\""
-    - '"I didn''t feel human."'
+    - '"Embarrassing stories aside, what I really wanted to tell you was a night
+      about five or so years ago. I had a completely viable patient laying there."'
+    - '"All I had to do was pull the bullet out and stitch him up. The kinda stuff
+      I see all the time."'
+    - "\" But I\u2026 I let him bleed out. For hours. I don\u2019t know why. I didn\u2019t
+      even feel anything after I pronounced him dead.\""
+    - "\"I\u2026 regret not having any feelings about it. It didn\u2019t feel human.
+      I didn\u2019t feel human.  \""
     names:
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
     - 'Medic
 
 '
@@ -2641,6 +2757,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1270494616}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1353295996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2901,7 @@ RectTransform:
   - {fileID: 2119051183}
   - {fileID: 1833343495}
   - {fileID: 1605850132}
+  - {fileID: 328156338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2977,6 +3097,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1441330687}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1501496776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,6 +3151,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1501496776}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1552745941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3205,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1552745941}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1605850131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3776,6 +3905,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::limbRemovalScript
   blinkButton: {fileID: 0}
   part: {fileID: 1717897538}
+  blackScreen: {fileID: 0}
+  cutSound: {fileID: 0}
+  duration: 1
 --- !u!1 &1789105636
 GameObject:
   m_ObjectHideFlags: 0
