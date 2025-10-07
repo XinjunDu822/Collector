@@ -157,7 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collector prototype powering on ...
+  m_text: 'Collector prototype powering on ... '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
   m_sharedMaterial: {fileID: -3754858912235700255, guid: 5561266ff98cca548a79bf2ab4193f4b, type: 2}
