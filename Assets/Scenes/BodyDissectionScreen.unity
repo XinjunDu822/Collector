@@ -2295,13 +2295,36 @@ MonoBehaviour:
     - "\u201CYou could use a scalpel. You know, the intelligent option.\u201D "
     - '#'
     - '"Will you listen? I''ll be straightforward."'
-    - "\"5 years ago, in my late 30\u2019s, I let a completely viable patient bleed
-      out for hours from a minor gunshot wound.\""
+    - "\" I\u2019ll be straight with you. Well. Not exactly, actually. When I was
+      in my late 20\u2019s, I got wasted with this guy one night at the training
+      camp.\""
+    - "\"I don\u2019t remember details, but I do remember pissing in the snow, drawing
+      dicks all around the camp. And then this girl I liked saw us\u2026 lost her
+      shit. I swear, I think she thought we were gay. But honestly? She might be
+      right. \""
+    - "\"\u2026 Nah, I\u2019m just fucking with you. Unless\u2026? \""
     - '#'
-    - "\"I don\u2019t even remember why, I just remember not feeling anything after
-      he passed. I regret not having any feelings about it, it didn\u2019t feel human.\""
-    - '"I didn''t feel human."'
+    - '"Embarrassing stories aside, what I really wanted to tell you was a night
+      about five or so years ago. I had a completely viable patient laying there."'
+    - '"All I had to do was pull the bullet out and stitch him up. The kinda stuff
+      I see all the time."'
+    - "\" But I\u2026 I let him bleed out. For hours. I don\u2019t know why. I didn\u2019t
+      even feel anything after I pronounced him dead.\""
+    - "\"I\u2026 regret not having any feelings about it. It didn\u2019t feel human.
+      I didn\u2019t feel human.  \""
     names:
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
+    - 'Medic
+
+'
     - 'Medic
 
 '

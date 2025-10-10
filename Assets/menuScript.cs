@@ -32,6 +32,7 @@ public class menuScript : MonoBehaviour
         credits.SetActive(false);
         socials.SetActive(false);
         gameButtons.SetActive(false);
+        closeButton.SetActive(true);
     }
 
     public void exit()

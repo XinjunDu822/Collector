@@ -9,7 +9,7 @@ public class TankMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotateSpeed = 150f;
     private float timer = 0.1f;
-    private float soundtimer = 1f;
+    private float soundtimer = 0.8f;
     private float rotatetimer = 0.1f;
 
     private Rigidbody2D rb;
@@ -76,8 +76,12 @@ public class TankMovement : MonoBehaviour
             if (soundtimer <= 0)
             {
                 StartCoroutine(Camera.main.GetComponent<ScreenShake2D>().Shake(0.2f, 0.15f));
-                soundtimer = 1.55f;
+                soundtimer = 1.5f;
             }
+        }
+        else
+        {
+            soundtimer = 0.8f;
         }
 
         rb.MovePosition(rb.position + forward);
